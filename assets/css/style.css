@@ -1,0 +1,112 @@
+/* Normalize */
+*{
+    margin:0;
+    padding:0;
+}
+/* main Styling */
+section{
+    display:flex;
+}
+article{
+    width:50vw;
+    height:85vh;
+    padding:1% 4%;
+}
+/* ------------------------ */
+.about{
+    margin-top:20vh;
+}
+.about h1{
+    font-size:44px;
+    margin-bottom:5vh;
+}
+.about p{
+    width:50%;
+    color:rgb(87, 86, 86);
+    line-height:25px;
+    font-size:17px;
+}
+/* ----------------------------- */
+.right{
+    background:url('../img/104.jpg') no-repeat;
+    background-color:rgba(241, 240, 240, 0.918);
+    background-size:contain;
+    background-position:center;
+}
+.right h4{
+    margin:0;
+    display:inline-block;
+    font-size:22px;
+}
+.right h5{
+    display:inline-block;
+    color:gray;
+}
+/* ------------------------------ */
+footer{
+    background-color:rgba(241, 240, 240, 0.918);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 2%;
+}
+.ico i{
+   margin-left:10px; 
+}
+.arrow{
+    display:flex;
+    align-items:center;
+    margin-left:5vw;
+}
+.arrow a{
+display:block;
+width:5vw;
+text-align:center;
+text-decoration-line: none;
+font-size:20px;
+padding:20px 0;
+}
+.arrow a:nth-child(1){
+    color:black;
+}
+.arrow a:nth-child(2){
+    background:black;
+    color:white;
+}
+.dr{
+    text-align:right;
+}
+.dr h5{
+    font-size:18px;
+}
+.dr h6{
+    color:gray;
+    font-size:14px;
+}
+/* normal Styling End*/
+/* Media Query Start */
+/* Medium Device(Tablets 768px and up) */
+@media only screen and (max-width: 768px){
+    section{
+        flex-direction:column;
+    }
+    article{
+        width:100vw;
+    }
+}
+/* Small Devices (Landscape phones,576px and up) */
+@media only screen and (max-width: 576px){
+    .left{
+        padding:2% 10%;
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+    }
+    .about h1{
+        font-size:54px;
+        margin-bottom:5vh;
+    }
+    .about p{
+        width:80%;
+    }
+}
